@@ -30,10 +30,10 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -43,28 +43,19 @@
             dataGridView1.Location = new Point(43, 36);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(361, 286);
+            dataGridView1.Size = new Size(680, 286);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
-            // 
-            button1.Location = new Point(475, 73);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 50);
-            button1.TabIndex = 1;
-            button1.Text = "Dodaj";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // button2
             // 
-            button2.Location = new Point(475, 161);
+            button2.Location = new Point(791, 207);
             button2.Name = "button2";
             button2.Size = new Size(135, 50);
             button2.TabIndex = 2;
             button2.Text = "Usuń";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -84,16 +75,27 @@
             button4.TabIndex = 4;
             button4.Text = "Odczyt z .cvs";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(791, 86);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 50);
+            button1.TabIndex = 5;
+            button1.Text = "Dodaj";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(682, 450);
+            ClientSize = new Size(992, 450);
+            Controls.Add(button1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
@@ -104,9 +106,9 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button1;
     }
 }

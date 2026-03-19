@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DrugieOkno\DrugieOkno.csproj" />
+    <ProjectReference Include="..\OknoDrugie\OknoDrugie.csproj" />
   </ItemGroup>
 
 </Project>
