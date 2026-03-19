@@ -1,4 +1,5 @@
 ﻿namespace Lab3
+    
 {
     partial class Form1
     {

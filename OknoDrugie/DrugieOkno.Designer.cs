@@ -1,6 +1,6 @@
-﻿namespace Lab3
+﻿namespace OknoDrugie
 {
-    partial class OknoDodawania
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,71 +31,72 @@
             textBoxImie = new TextBox();
             textBoxNazwisko = new TextBox();
             textBoxWiek = new TextBox();
+            comboBoxStanowisko = new ComboBox();
             button1 = new Button();
             button2 = new Button();
-            comboBoxStanowisko = new ComboBox();
             SuspendLayout();
             // 
             // textBoxImie
             // 
-            textBoxImie.Location = new Point(69, 73);
+            textBoxImie.Location = new Point(68, 109);
             textBoxImie.Name = "textBoxImie";
-            textBoxImie.Size = new Size(151, 27);
+            textBoxImie.Size = new Size(125, 27);
             textBoxImie.TabIndex = 0;
             // 
             // textBoxNazwisko
             // 
-            textBoxNazwisko.Location = new Point(69, 145);
+            textBoxNazwisko.Location = new Point(68, 180);
             textBoxNazwisko.Name = "textBoxNazwisko";
-            textBoxNazwisko.Size = new Size(151, 27);
+            textBoxNazwisko.Size = new Size(125, 27);
             textBoxNazwisko.TabIndex = 1;
             // 
             // textBoxWiek
             // 
-            textBoxWiek.Location = new Point(69, 217);
+            textBoxWiek.Location = new Point(68, 252);
             textBoxWiek.Name = "textBoxWiek";
-            textBoxWiek.Size = new Size(151, 27);
+            textBoxWiek.Size = new Size(125, 27);
             textBoxWiek.TabIndex = 2;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(102, 371);
-            button1.Name = "button1";
-            button1.Size = new Size(118, 33);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(269, 371);
-            button2.Name = "button2";
-            button2.Size = new Size(110, 33);
-            button2.TabIndex = 5;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
             // 
             // comboBoxStanowisko
             // 
             comboBoxStanowisko.FormattingEnabled = true;
-            comboBoxStanowisko.Location = new Point(69, 290);
+            comboBoxStanowisko.Location = new Point(68, 320);
             comboBoxStanowisko.Name = "comboBoxStanowisko";
             comboBoxStanowisko.Size = new Size(151, 28);
-            comboBoxStanowisko.TabIndex = 6;
+            comboBoxStanowisko.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(414, 319);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 4;
+            button1.Text = "Zatwierdz";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(606, 319);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 5;
+            button2.Text = "Anuluj";
+            button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(512, 450);
-            Controls.Add(comboBoxStanowisko);
+            ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(comboBoxStanowisko);
             Controls.Add(textBoxWiek);
             Controls.Add(textBoxNazwisko);
             Controls.Add(textBoxImie);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,8 +106,8 @@
         private TextBox textBoxImie;
         private TextBox textBoxNazwisko;
         private TextBox textBoxWiek;
+        private ComboBox comboBoxStanowisko;
         private Button button1;
         private Button button2;
-        private ComboBox comboBoxStanowisko;
     }
 }
