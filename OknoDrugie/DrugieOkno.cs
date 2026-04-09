@@ -16,7 +16,7 @@ namespace Lab3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Upewnij siê, ¿e textBoxy maj¹ poprawne nazwy
+            
             NowyPracownik = new Pracownik(
                 textBoxImie.Text,
                 textBoxNazwisko.Text,
@@ -37,7 +37,7 @@ namespace Lab3
            }
     public class Pracownik
     {
-        private static int _nextId = 1; // Automatyczne ID [cite: 82]
+        private static int _nextId = 1;
         public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
